@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2 style="font-family: sans-serif;">Código do Mercado Livre:</h2>
+    <code id="code" style="background: #eee; padding: 10px; display: block; word-break: break-all;">Aguardando...</code>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
+        if (code) document.getElementById('code').innerText = code;
+    </script>
+</body>
+</html>
